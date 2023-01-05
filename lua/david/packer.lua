@@ -48,9 +48,7 @@ return require('packer').startup(function(use)
             {'rafamadriz/friendly-snippets'},
         }
     }
-
     use( 'tpope/vim-rails' )
-
     use {
         'nvim-tree/nvim-tree.lua',
         requires = {
@@ -58,14 +56,12 @@ return require('packer').startup(function(use)
         },
         tag = 'nightly' -- optional, updated every week. (see issue #1193)
     }
-
     use( 'slim-template/vim-slim' )
-
     use {
         "windwp/nvim-autopairs",
         config = function() require("nvim-autopairs").setup {} end
     }
-
     use( 'tpope/vim-endwise')
+    use( 'numToStr/Comment.nvim')
 
 end)
