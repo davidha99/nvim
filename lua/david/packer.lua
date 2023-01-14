@@ -63,5 +63,7 @@ return require('packer').startup(function(use)
     }
     use( 'tpope/vim-endwise')
     use( 'numToStr/Comment.nvim')
+    use( 'windwp/nvim-ts-autotag')
+    use( 'mattn/emmet-vim' )
 
 end)

@@ -1,10 +1,7 @@
-vim.keymap.set("n", "<leader>e", vim.cmd.NvimTreeToggle)
+vim.keymap.set("n", "<leader>e", vim.cmd.NvimTreeFindFileToggle)
 
 -- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true
-
--- empty setup using defaults
-require("nvim-tree").setup()
 
 -- OR setup with some options
 require("nvim-tree").setup({
