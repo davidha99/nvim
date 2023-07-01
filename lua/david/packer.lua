@@ -49,13 +49,6 @@ return require('packer').startup(function(use)
         }
     }
     use( 'tpope/vim-rails' )
-    use {
-        'nvim-tree/nvim-tree.lua',
-        requires = {
-            'nvim-tree/nvim-web-devicons', -- optional, for file icons
-        },
-        tag = 'nightly' -- optional, updated every week. (see issue #1193)
-    }
     use( 'slim-template/vim-slim' )
     use {
         "windwp/nvim-autopairs",
@@ -70,7 +63,6 @@ return require('packer').startup(function(use)
     use( 'kchmck/vim-coffee-script' )
     use( 'mfussenegger/nvim-dap' )
     use( 'rcarriga/nvim-dap-ui' )
-    use( 'rcarriga/nvim-notify' )
     use({ 'kylechui/nvim-surround', tag="*" })
     use( 'f-person/git-blame.nvim' )
 
