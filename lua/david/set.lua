@@ -3,9 +3,9 @@ vim.opt.guicursor = ""
 vim.opt.number = true
 vim.opt.relativenumber = true
 
-vim.opt.tabstop = 2
-vim.opt.softtabstop = 2
-vim.opt.shiftwidth = 2
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 
 vim.opt.smartindent = true
@@ -31,22 +31,13 @@ vim.opt.colorcolumn = "80"
 
 vim.g.mapleader = " "
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-- ukko identation setting
+local path = vim.fn.getcwd()
+if string.match(path, "environment") then
+  vim.opt.tabstop = 2
+  vim.opt.softtabstop = 2
+  vim.opt.shiftwidth = 2
+  vim.opt.expandtab = true
+end
+-- end of ukko identation setting
 
